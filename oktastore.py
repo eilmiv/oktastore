@@ -1,5 +1,5 @@
 from collections import defaultdict
-import json
+from ast import literal_eval
 
 
 def is_var(x):
@@ -78,8 +78,8 @@ class TripleStore:
     	
 
     def dump(self):
-        return json.dumps(list(self.query("_0", "_1", "_2")))
+        return "\n".join(repr(t)[1:-1] for t in self.query("_0", "_1", "_2"))
 
-    def load(self, json_string):
-        for triple in json.loads(json_string):
-            self.insert(*triple)
+    def load(self, triples_string):
+        for triple in triples_string.splitlines():
+            self.insert(*literal_eval(triple))
