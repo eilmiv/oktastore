@@ -11,7 +11,7 @@ Usage:
 
 >>> store.query("_half", "is_half_of", "_total")  # variables start with "_"
 {(1, 'is_half_of', 2), (2, 'is_half_of', 4)}
->>> len(store.query("_half", "is_half_of", "_total"))  # runs in constant time, no matter the size of the result!
+>>> len(store.query("_half", "is_half_of", "_total"))  # runs always in constant time!
 2
 >>> list(store.multi_query([
         ("_quarter", "is_half_of", "_half"), ("_half", "is_half_of", "_total")
