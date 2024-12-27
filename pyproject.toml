@@ -7,7 +7,7 @@ name = "oktastore"
 version = "1.0.0"
 description = "A very simple in-memory triplestore in pure python which allows constant time queries."
 readme = "README.md"
-license = "MIT"
+license = { file = "LICENSE.md"}
 authors = [{ name = "Martin Voigt" }]
 repository = "https://github.com/eilmiv/oktastore"
 keywords = []
