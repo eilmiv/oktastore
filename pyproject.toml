@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oktastore"
+version = "1.0.0"
+description = "A very simple in-memory triplestore in pure python which allows constant time queries."
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Martin Voigt" }]
+repository = "https://github.com/eilmiv/oktastore"
+keywords = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]

@@ -1,5 +1,3 @@
-from oktastore import TripleStore
-
 # oktastore
 A very simple in-memory triplestore in pure python. Allows constant time queries.
 
