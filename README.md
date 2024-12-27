@@ -1,7 +1,15 @@
 # oktastore
 A very simple in-memory triplestore in pure python. Allows constant time queries.
 
-Usage:
+## Installation
+The store is so simple you can just copy the [oktastore.py](oktastore.py) file to your project.
+
+Alternatively you can use pip:
+```bash
+pip install git+https://github.com/eilmiv/oktastore
+```
+
+## Usage
 ```python
 from oktastore import TripleStore
 store = TripleStore()
